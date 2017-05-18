@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Eroller</string>
+    <string name="connexionproblem">Erreur de connexion</string>
+    <string name="autonomie_batterie">niveau de chargement de batterie</string>
 </resources>
