@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">Eroller</string>
-<<<<<<< HEAD
     <string name="connexionproblem">Erreur de connexion</string>
     <string name="autonomie_batterie">niveau de chargement de batterie</string>
-=======
->>>>>>> projet init
 </resources>
