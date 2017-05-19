@@ -2,10 +2,13 @@
 
 buildscript {
     repositories {
+<<<<<<< HEAD
         maven {
           url "https://jitpack.io"
 
         }
+=======
+>>>>>>> projet init
         jcenter()
     }
     dependencies {

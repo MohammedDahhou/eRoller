@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+>>>>>>> projet init
     package="fr.utbm.tokylabs.eroller">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+<<<<<<< HEAD
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".BatteryActivity">
@@ -16,3 +22,12 @@
     </application>
 
 </manifest>
+=======
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+    </application>
+
+</manifest>
+>>>>>>> projet init
