@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="Map" />
+
+    <item
+        android:id="@+id/history"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Histry" />
+
+    <item
+        android:id="@+id/bluetooth"
+        android:icon="@android:drawable/stat_sys_data_bluetooth"
+        android:title="bluetooth"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/configuration"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Configuration"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/Autonomie"
+        android:icon="@android:drawable/ic_lock_idle_charging"
+        android:title="Autonomie"
+        app:showAsAction="ifRoom"/>
+</menu>

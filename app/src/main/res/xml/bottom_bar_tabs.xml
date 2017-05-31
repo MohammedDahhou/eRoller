@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/navigation_map"
+        icon="@android:drawable/ic_menu_compass"
+         />
+
+    <tab
+        id="@+id/history"
+        icon="@android:drawable/ic_menu_my_calendar"
+         />
+
+    <tab
+        id="@+id/bluetooth"
+        icon="@android:drawable/stat_sys_data_bluetooth"
+        />
+
+    <tab
+        id="@+id/configuration"
+        icon="@android:drawable/ic_menu_manage"
+        />
+
+    <tab
+        id="@+id/Autonomie"
+        icon="@android:drawable/ic_lock_idle_charging"
+        />
+</tabs>
