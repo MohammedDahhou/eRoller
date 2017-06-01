@@ -1,17 +1,29 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container_fragment">
 
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/waveLoadingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        app:wlv_borderColor="@color/colorAccent"
+        app:wlv_borderWidth="1dp"
+        app:wlv_progressValue="80"
+        app:wlv_shapeType="circle"
+        app:wlv_round_rectangle="true"
+        app:wlv_triangle_direction="north"
+        android:layout_margin="30dp"
+        app:wlv_titleCenterStrokeColor="@android:color/holo_green_light"
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_titleCenter="%"
+        app:wlv_titleCenterColor="@android:color/white"
+        app:wlv_titleCenterSize="20sp"
+        app:wlv_waveAmplitude="30"
+        app:wlv_waveColor="@color/wavecolor"/>
 
-    <TextView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/List"
-        android:layout_width="match_parent"
-        android:text="autonomie"
-        android:textSize="20dp"
-        android:textColor="@android:color/holo_red_dark"
-        android:layout_centerInParent="true"
-        android:layout_height="match_parent" />
 
 </RelativeLayout>

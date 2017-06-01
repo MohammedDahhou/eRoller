@@ -33,7 +33,14 @@ dependencies {
     compile 'com.jakewharton:butterknife:6.1.0'
     compile 'com.google.android.gms:play-services:9.6.1'
     compile 'com.google.code.gson:gson:2.8.0'
+    //bootstrap effects
+    compile 'com.beardedhen:androidbootstrap:2.3.1'
     compile 'com.google.android.gms:play-services-maps:9.6.1'
+    //bottom navigation bar
     compile 'com.roughike:bottom-bar:2.3.1'
+    //ripple effects
+    compile 'com.github.rey5137:material:1.2.4'
+    //wave progress
+    compile 'me.itangqi.waveloadingview:library:0.3.5'
     testCompile 'junit:junit:4.12'
 }

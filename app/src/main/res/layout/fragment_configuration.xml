@@ -1,16 +1,107 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
-    android:id="@+id/container_fragment">
-
-
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/thumbnail"
+        android:src="@android:drawable/ic_menu_camera"
+        app:bootstrapBrand="info"
+        app:hasBorder="false"
+        android:layout_centerHorizontal="true"/>
     <TextView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/List"
-        android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:text="test configuration"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:text="Nom et Prenom :"
+        android:textSize="20sp"
+        android:id="@+id/label_user_name"
+        android:layout_below="@+id/thumbnail"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"/>
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
         android:layout_alignParentLeft="true"
-        android:layout_height="match_parent" />
+        android:layout_below="@+id/label_user_name"
+        android:background="@drawable/textviewshape"
+        android:id="@+id/edit_user_f_name"
+        android:inputType="textNoSuggestions"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/edit_user_f_name"
+        android:layout_toEndOf="@+id/edit_user_f_name"
+        android:id="@+id/edit_user_l_name"
+        android:gravity="center"
+        android:background="@drawable/textviewshape"
+        android:inputType="textNoSuggestions"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Téléphone:"
+        android:textSize="20sp"
+        android:layout_below="@id/edit_user_f_name"
+        android:layout_alignParentLeft="true"
+        android:gravity="left"
+        android:id="@+id/label_phone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/textviewshape"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/label_phone"
+        android:inputType="phone"
+        android:id="@+id/edit_telephone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adresse:"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:layout_below="@id/edit_telephone"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/label_address"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/textviewshape"
+        android:layout_alignParentLeft="true"
+        android:inputType="textNoSuggestions"
+        android:layout_below="@id/label_address"
+        android:id="@+id/edit_address"/>
+    <com.rey.material.widget.Button
+        android:id="@+id/update_profile_BTN"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_address"
+        android:background="@drawable/buttonshape"
+        app:rd_cornerRadius="35dp"
+        app:rd_backgroundColor="@color/White"
+        android:textColor="@color/White"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rd_delayClick="afterRelease"
+        android:text="Mettre à jour"
+        android:layout_marginTop="15dp"
+        app:rd_enable="true"
+        android:textSize="@dimen/text_size">
+
+    </com.rey.material.widget.Button>
+
+
+
 
 </RelativeLayout>
