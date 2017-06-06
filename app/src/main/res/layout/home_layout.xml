@@ -13,7 +13,7 @@
     <com.roughike.bottombar.BottomBar
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
-        app:bb_activeTabColor="@color/wallet_holo_blue_light"
+        app:bb_activeTabColor="@color/black"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         app:bb_tabXmlResource="@xml/bottom_bar_tabs" />
