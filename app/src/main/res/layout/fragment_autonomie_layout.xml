@@ -11,6 +11,8 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         app:wlv_borderColor="@color/colorAccent"
+        app:wlv_titleBottom="@string/empty_battery"
+        app:wlv_titleTop="@string/full_battery"
         app:wlv_borderWidth="1dp"
         app:wlv_progressValue="80"
         app:wlv_shapeType="circle"
@@ -18,12 +20,20 @@
         app:wlv_triangle_direction="north"
         android:layout_margin="30dp"
         app:wlv_titleCenterStrokeColor="@android:color/holo_green_light"
+        app:wlv_titleTopStrokeColor="@android:color/holo_green_light"
+        app:wlv_titleBottomStrokeColor="@android:color/holo_green_light"
         app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_titleBottomStrokeWidth="3dp"
+        app:wlv_titleTopStrokeWidth="3dp"
         app:wlv_titleCenter="%"
+        app:wlv_titleBottomColor="@android:color/white"
+        app:wlv_titleTopColor="@android:color/white"
         app:wlv_titleCenterColor="@android:color/white"
         app:wlv_titleCenterSize="20sp"
         app:wlv_waveAmplitude="30"
+        app:wlv_round_rectangle_x_and_y="15"
         app:wlv_waveColor="@color/wavecolor"/>
+
 
 
 </RelativeLayout>

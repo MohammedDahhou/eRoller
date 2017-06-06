@@ -42,5 +42,7 @@ dependencies {
     compile 'com.github.rey5137:material:1.2.4'
     //wave progress
     compile 'me.itangqi.waveloadingview:library:0.3.5'
+    //switch button
+    compile 'com.kyleduo.switchbutton:library:1.4.4'
     testCompile 'junit:junit:4.12'
 }

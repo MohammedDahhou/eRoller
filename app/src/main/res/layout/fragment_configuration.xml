@@ -82,10 +82,71 @@
         android:inputType="textNoSuggestions"
         android:layout_below="@id/label_address"
         android:id="@+id/edit_address"/>
+    <com.kyleduo.switchbutton.SwitchButton
+        style="@style/SwitchButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/edit_address"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        app:kswThumbColor="@color/White"
+        app:kswFadeBack="@android:color/holo_green_light"
+        android:id="@+id/switch_beginner"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Mode Amateur:"
+        android:textSize="20sp"
+        android:id="@+id/label_beginner"
+        android:layout_alignBottom="@id/switch_beginner"
+        android:layout_centerHorizontal="true"/>
+
+    <com.kyleduo.switchbutton.SwitchButton
+        style="@style/SwitchButtonStyle"
+        android:layout_below="@id/switch_beginner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:kswThumbColor="@color/White"
+        app:kswFadeBack="@android:color/holo_green_light"
+        android:id="@+id/switch_medium"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Mode Normal:"
+        android:textSize="20sp"
+        android:id="@+id/label_medium"
+        android:layout_alignBottom="@id/switch_medium"
+        android:layout_centerHorizontal="true"/>
+
+    <com.kyleduo.switchbutton.SwitchButton
+        style="@style/SwitchButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:kswThumbColor="@color/White"
+        app:kswFadeBack="@android:color/holo_green_light"
+        android:id="@+id/switch_pro"
+        android:layout_below="@id/switch_medium"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Mode pro:"
+        android:textSize="20sp"
+        android:id="@+id/label_pro"
+        android:layout_alignBottom="@id/switch_pro"
+        android:layout_centerHorizontal="true"/>
+
     <com.rey.material.widget.Button
         android:id="@+id/update_profile_BTN"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/edit_address"
+        android:layout_below="@id/switch_pro"
         android:background="@drawable/buttonshape"
         app:rd_cornerRadius="35dp"
         app:rd_backgroundColor="@color/White"

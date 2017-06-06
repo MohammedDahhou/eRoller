@@ -54,7 +54,6 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
         selectFragment(R.id.navigation_map);
-
     }
 
 

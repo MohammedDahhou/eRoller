@@ -1,13 +1,12 @@
 package com.example.mohammeddahhou.eroller;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -15,10 +14,9 @@ import fragment.CardFragment;
 import fragment.ConfigurationFragment;
 import fragment.HistoryFragment;
 
-public class ClientActivity extends AppCompatActivity {
+public class ClientActivity extends Activity {
 
     private Fragment fragment;
-    private ActionBar actionBar;
     private FragmentManager fragmentManager;
     private Menu menu;
     private BottomNavigationView navigation;
@@ -37,9 +35,6 @@ public class ClientActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
-        actionBar=getSupportActionBar();
-        if(actionBar != null)
-            actionBar.hide();
         navigation = (BottomNavigationView) findViewById(R.id.navigation_bottom);
         menu = navigation.getMenu();
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
